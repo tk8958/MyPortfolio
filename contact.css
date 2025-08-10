@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.myIntro p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navItems ul {
+    display: flex;
+    list-style: none;
+}
+
+.navItems ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+li:hover {
+    color:aqua;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mainDiv{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-evenly
+
+}
+
+
+/* CardOne */
+
+#Cards{
+    height: 400px;;
+    width: 300px;
+    background-color: #292828;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align:center;
+    
+}
+
+#Cards:hover{
+  height: 410px;
+  width: 310px;
+}
+
+#picture{
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       padding: 15px;
+       
+
+}
+
+ #image{
+    background-image: url(image/insta.jpeg);
+    background-size: cover;
+    height:300px;
+    width:100%;
+    background-color:aqua;
+    border-radius: 10px;
+}
+
+#clickHere{
+    color:rgb(161, 159, 159);
+    font-weight:900;
+}
+
+#info{
+     color:rgb(161, 159, 159);
+     
+}
+
+
+/* CardTwo */
+
+#CardsTwo{
+    height: 400px;;
+    width: 300px;
+    background-color: #292828;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align:center;
+    
+}
+
+#CardsTwo:hover{
+  height: 410px;
+  width: 310px;
+}
+
+  #picture2{
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       padding: 15px;
+       
+
+}
+
+ #image2{
+    background-image: url(image/linkdin.png);
+    background-size: cover;
+    height:300px;
+    width:100%;
+    background-color:aqua;
+    border-radius: 10px;
+}
+
+    #clickHere2{
+    color:rgb(161, 159, 159);
+    font-weight:900;
+}
+
+  #info2{
+     color:rgb(161, 159, 159);
+     
+}
+
+ footer{
+        background-color: #1a1a1a;
+        height:150px;
+        width: 100vw;
+        margin-top:5%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    footer p{
+        color:darkslategrey;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 20px;;
+    }
+
+    footer h2{
+        color:dimgrey;
+        font-family: initial;
+    }
+
+
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .navItems {
+        display: none;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navItems ul {
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .navItems ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navItems.show {
+        display: block;
+    }
+
+    .mainDiv{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-evenly
+
+     footer h2{
+        color:dimgrey;
+        font-family: initial;
+        font-size: 15px;
+    }
+
+}
+
+
+
+}

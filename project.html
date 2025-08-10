@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Kumar</title>
+</head>
+
+<body>
+    <div class="main">
+
+
+        <!-- Nav Bar -->
+        <nav class="navbar">
+            <div class="myIntro">
+                <p>My Portfolio</p>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="navItems" id="navItems">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact Me</li>
+                    </a>
+                    <a href="project.html">
+                        <li>Project</li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+
+        <div class="mainDiv">
+
+
+            <!-- Project One -->
+            <div id="project1">
+                <h1>Project 1</h1>
+                <div id="actualProject">
+                    <p id="projectName">Airlines Management System</p>
+                    <p id="projectDescription">This Project was developed by my college group and we was 4 members in
+                        this group.OverAll Backend
+                        is developed by me of this project by using springboot framwork and SQL use for data management
+                    </p>
+
+                    <div id="github"><a target="_blank" href="https://github.com/tk8958/AirlinesManagementSystem">GitHub</a></div>
+                </div>
+            </div>
+
+            <!-- Project Two -->
+            <div id="project1">
+                <h1>Project 2</h1>
+                <div id="actualProject">
+                    <p id="projectName">Employee Management</p>
+                    <p id="projectDescription">My first web project built using Spring Boot and React.js, with MySQL as
+                        the database. It allows users to easily perform Create, Read, Update, and Delete operations.
+                    </p>
+
+                    <div id="github"><a  target="_blank"href="https://github.com/tk8958/EmployeeManagement">GitHub</a></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navItems").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.myIntro p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navItems ul {
+    display: flex;
+    list-style: none;
+}
+
+.navItems ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+#element{
+    background-color:steelblue;
+    
+   
+}
+
+li:hover {
+    color:aqua;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    flex-wrap: wrap; /* 📱 Mobile ke liye important */
+}
+
+.hero-content {
+    margin-bottom:10px;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+    line-height: 1.5;
+}
+
+.hero-content #welcome{
+    color:darkseagreen;
+}
+
+.hero-image img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    border-radius:50%;
+}
+
+
+
+
+.firstCard{
+
+    margin-left:5%;
+    height:200px;
+    width:50%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:50%;
+      border-bottom-left-radius:50%;
+    }
+
+    .firstCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+
+    #introLines{
+        color:grey;
+    }
+
+    .secondCard{
+
+    margin-right:5%;
+    height:200px;
+    margin-left:50%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:50%;
+     border-bottom-left-radius:50%;
+    }
+
+    .secondCard #introLines{
+        font-size:11px;
+        margin-left:15px;
+        margin-right:15px;
+
+    }
+
+    .secondCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+
+
+
+    .thirdCard{
+
+    margin-right:5%;
+    height:200px;
+    width:50%;
+    margin-left:5%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:50%;
+     border-bottom-left-radius:50%;
+    }
+
+    .thirdCard #introLines{
+        font-size:18px;
+        margin-left:15px;
+        margin-right:15px;
+
+    }
+
+    .thirdCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+
+
+
+
+    .fourthCard{
+
+    margin-right:5%;
+    height:200px;
+    margin-left:50%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:50%;
+     border-bottom-left-radius:50%;
+    }
+
+    .fourthCard #introLines{
+        font-size:20px;
+        margin-left:15px;
+        margin-right:15px;
+
+    }
+
+    .fourthCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+
+
+    footer{
+        background-color: #1a1a1a;
+        height:150px;
+        width: 100vw;
+        margin-top:5%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    footer p{
+        color:darkslategrey;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 20px;;
+    }
+
+    footer h2{
+        color:dimgrey;
+        font-family: initial;
+    }
+
+
+
+
+/* ---------- Responsive Styling ---------- */
+@media screen and (max-width: 768px) {
+    .navItems {
+        display: none;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navItems ul {
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .navItems ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navItems.show {
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 200px;
+         border-radius:50%;
+  }
+
+
+
+  .firstCard{
+
+    margin-left:5%;
+    height:150px;
+    width:90%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:30%;
+      border-bottom-left-radius:30%;
+    }
+
+    .firstCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+    #introLines{
+        font-size:12px;
+        color:grey;
+    }
+
+
+
+    .secondCard{
+
+    margin-left:5%;
+    height:150px;
+    width:90%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:30%;
+      border-bottom-left-radius:30%;
+    }
+
+    .secondCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+    #introLines{
+        font-size:12px;
+        color:grey;
+    }
+
+    .thirdCard{
+
+    margin-left:5%;
+    height:150px;
+    width:90%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:30%;
+      border-bottom-left-radius:30%;
+    }
+
+    .thirdCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+    .thirdCard #introLines{
+        font-size:16px;
+        color:grey;
+    }
+
+
+
+    .fourthCard{
+
+    margin-left:5%;
+    height:150px;
+    width:90%;
+    background-color:#1a1a1a;
+     margin-top:5%;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-top-right-radius:30%;
+      border-bottom-left-radius:30%;
+    }
+
+    .fourthCard #introduction{
+        color:green;
+        font-size:30px;
+    }
+   .fourthCard #introLines{
+        font-size:12px;
+        color:grey;
+    }
+
+      footer h2{
+        color:dimgrey;
+        font-family: initial;
+        font-size: 15px;
+    }
+}
+
+}

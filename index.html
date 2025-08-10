@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Kumar</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Nav Bar -->
+
+        <nav class="navbar">
+            <div class="myIntro">
+                <p>My Portfolio</p>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="navItems" id="navItems">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                     <a href="contact.html"><li>Contact Me</li></a>
+                     <a href="project.html"><li>Project</li></a>
+                     
+                </ul>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Tushar Kumar</h1>
+                <span id="element"></span>
+                <p>I am a passionate full-stack developer skilled in Java, Spring Boot, and React.</p>
+                  <h2 id="welcome">Welcome </h2>
+            </div>
+            <div class="hero-image">
+                <img src="image/mypic.jpg" alt="Tushar's Image">
+            </div>
+        </section>
+
+        <!-- My Bio Cards -->
+        <div>
+
+            <!-- First Cart -->
+
+
+            <div class="firstCard">
+
+                <div>
+                    <p id="introduction">INTRODUCTION
+                    <p>
+                    <p id="introLines">Hi, I'm Tushar Kumar 👋
+                        A passionate full-stack developer with a BCA from Vivek College, Bijnor.
+                        I love building modern web apps using Java, Spring Boot, and React.js.
+                        Let's create something amazing together!
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Second Cart -->
+
+            <div class="secondCard">
+
+                <div>
+                    <p id="introduction">EDUCATION
+                    <p>
+                    <p id="introLines">"I hold a Bachelor’s degree in Computer Applications (BCA) from Vivek College,
+                        Bijnor, where I gained strong expertise in programming, software development, and emerging
+                        technologies. I completed my 12th from the State Board, building a solid base in logical
+                        thinking and problem-solving. Driven by curiosity and a passion for innovation, I am committed
+                        to leveraging my skills to create impactful digital solutions."
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Third Cart -->
+            
+            <div class="thirdCard">
+
+                <div>
+                    <p id="introduction">Key Skills
+                    <p>
+                    <p id="introLines">
+                        Backend-- JAVA and MySQL <br>
+                        Frameworks--SpringBoot and React.js <br>
+                        Frontend--HTML , CSS , Tailwind CSS , JavaScript,
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Fourth cart -->
+            
+              <div class="fourthCard">
+
+                <div>
+                    <p id="introduction">ADDRESS
+                    <p>
+                    <p id="introLines">
+                        Home Town-- Raipur Sadat <br>
+                        Dist-- Bijnor<br>
+                        State-- Uttar Pradesh
+                    </p>
+                </div>
+
+            </div>
+
+          
+
+
+        </div>
+
+         <!-- Footer -->
+            <footer>
+
+                     <p>&#169 2025 Tushar Kumar </p>
+                     <h2>Thanks to visit my website &#9829</h2>
+            </footer>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("navItems").classList.toggle("show");
+            }
+        </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+         <script>
+    var typed = new Typed('#element', {
+      strings: ['Full-Stack Java Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>

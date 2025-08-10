@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.myIntro p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navItems ul {
+    display: flex;
+    list-style: none;
+}
+
+.navItems ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+li:hover {
+    color:aqua;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ footer{
+        background-color: #1a1a1a;
+        height:150px;
+        width: 100vw;
+        margin-top:5%px;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+    }
+
+  
+
+    footer p{
+        color:darkslategrey;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 20px;;
+    }
+
+    footer h2{
+        color:dimgrey;
+        font-family: initial;
+    }
+
+     .mainDiv{
+       
+       margin:5%;
+
+     }
+
+     #actualProject{
+        background-color: #1a1a1a;
+        
+        align-items: center;
+        padding:30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+     }
+
+     #projectName{
+        font-size: 30px;
+        font-weight: bold;
+        color: darkgreen;
+     }
+
+     #projectDescription{
+        color: gray;
+     }
+
+     #github {
+        text-decoration: none;
+        background-color: blue;
+       margin-top: 10px;
+       width: 60px;
+       padding:5px;
+       border-radius: 10px;
+        
+     }
+     #github{
+        text-decoration: none;;
+     }
+     #github:hover{
+        background-color:black
+       
+     }
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .navItems {
+        display: none;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navItems ul {
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .navItems ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navItems.show {
+        display: block;
+    }
+
+     footer h2{
+        color:dimgrey;
+        font-family: initial;
+        font-size: 15px;
+    }
+
+     #projectName{
+        font-size: 20px;
+    }
+
+}
+

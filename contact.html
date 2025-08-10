@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Kumar</title>
+</head>
+
+<body>
+    <div class="main">
+
+
+        <!-- Nav Bar -->
+        <nav class="navbar">
+            <div class="myIntro">
+                <p>My Portfolio</p>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="navItems" id="navItems">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact Me</li>
+                    </a>
+                    <a href="project.html">
+                        <li>Project</li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+
+        <div class="mainDiv">
+
+            <!-- firstCard -->
+        
+                <div id="Cards">
+                        <a href="https://www.instagram.com/tk__8958/" target="_blank">
+                    <div id="picture">
+                        <div id="image"></div>
+                    </div>
+
+                    <p id="clickHere">Click Here</p>
+
+                    <p id="info">To contact me on INSTAGRAM </p>
+                    </a>
+                </div>
+
+            <!-- CardTwo -->
+                <div id="CardsTwo">
+                        <a href="https://www.linkedin.com/in/tushar-kumar-204548335/" target="_blank">
+                    <div id="picture2">
+                        <div id="image2"></div>
+                    </div>
+
+                    <p id="clickHere2">Click Here</p>
+
+                    <p id="info2">To contact me on LINKDIN </p>
+                    </a>
+                </div>
+            
+        </div>
+
+         
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navItems").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
